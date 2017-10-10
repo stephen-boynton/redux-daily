@@ -8,9 +8,13 @@ class App extends Component {
     render() {
         return (
             <div className="row">
-                <h1>Books N' Roses: Appetite for Instruction</h1>
+                <div className="navbar navbar-light bg-faded">
+                <h1 >Books N' Roses: Appetite for Instruction</h1>
+                </div>
+                <div className="row">
                 <BookList/>
                 <BookDetail/>
+                </div>
             </div>
         );
     }

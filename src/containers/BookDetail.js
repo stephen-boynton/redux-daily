@@ -14,9 +14,9 @@ class BookDetail extends Component {
       )
     }
     return (
-      <div className="col-md-4">
+      <div className="card w-70">
         <h3> Details for: </h3>
-        <h4 className="title">{this.props.book.title}</h4>
+        <h4 className="card-title">{this.props.book.title}</h4>
         <div>{this.props.book.pages} pages</div>
         <div>Author: {this.props.book.author}</div>
         <div>Price: ${this.props.book.price} USD</div>

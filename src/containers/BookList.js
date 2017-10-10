@@ -14,16 +14,24 @@ class BookList extends Component {
 
     // ******************
     //
-    //     <li
-    //       key={book.id}
-    //       onClick={() => this.props.selectBook(book)}
-    //       className="list-group-item">{book.title}</li>
+        // <li
+        //   key={book.id}
+        //   onClick={() => this.props.selectBook(book)}
+        //   className="list-group-item">{book.title}</li>
     //
     // ******************
 
     return (
       <ul className="list-group col-sm-4">
-        {/* return your mapped array list items here */}
+        {this.props.books.map(book => {
+        return (
+        <li
+          key={book.id}
+          onClick={() => this.props.selectBook(book)}
+          className="list-group-item">{book.title}
+          </li>)
+        }
+        )}
       </ul>
     );
   }
